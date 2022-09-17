@@ -1,2 +1,2 @@
-# js-todo-list
-📑 Todo List with Vanilla JavaScript
+# To-do List
+📑 To-do List with Vanilla JavaScript
