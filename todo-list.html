@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오늘 할 일</title>
+    <link rel="stylesheet" href="./css/todo-list.css">
+    <link rel="stylesheet" href="./css/font.css">
+
+    <!-- 아이콘 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/a9f8e9bd30.js" crossorigin="anonymous"></script>
+    
+    <!-- 자바스크립트 -->
+    <script defer src="./js/clock.js"></script>
+    <script defer src="./js/greeting.js"></script>
+    <script defer src="./js/quotes.js"></script>
+    <script defer src="./js/todo.js"></script>
+    <script defer src="./js/modal.js"></script>
+    <script defer src="./js/weather.js"></script>
+    <script defer src="./js/darkmode.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div id="weather">
+                <span></span>
+                <span></span>
+            </div>
+            <div id="header-right">
+                <p id="clock"></p>
+                <div class="mode-toggle">
+                    <div class="mode-toggle-inner">
+                        <div id="sunIcon" class="toggle-box">
+                            <i class="bi bi-sun-fill"></i>
+                        </div>
+                        <div id="moonIcon" class="toggle-box">
+                            <i class="fas fa-moon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <form id="login-form" class="hidden">
+            <input 
+                required
+                maxlength="10"
+                type="text"
+                placeholder="이름을 입력하세요." 
+            />
+            <input type="submit" value="등록" class="btn" />
+        </form>
+        <h1 id="greeting" class="hidden"></h1>
+        <form id="todo-form" class="hidden">
+            <input type="text" placeholder="오늘은 무엇을 할까?" required />
+        </form>
+        <p id="list" class="hidden">| 목록 </p>
+        <ul id="todo-list"></ul>
+        <div id="quote">
+            <p></p>
+            <p></p>
+        </div>
+
+        <div class="modal hidden"></div>
+    </div>
+</body>
+</html>
