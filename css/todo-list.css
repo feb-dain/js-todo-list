@@ -29,12 +29,10 @@ html{
     height: 100%;
 }
 body {
-    min-width: 100%;
     min-height: 100%;
 }
 
 #wrap {
-    width: 100%;
     min-height: 100vh;
     padding: 2.8rem;
     background: var(--light-bg-color);
@@ -190,7 +188,7 @@ body {
 }
 
 /* 반응형 */
-@media screen and (min-width:3rem){
+@media screen and (min-width:30rem){
     #wrap {
         width: 48rem;
         margin: auto;
