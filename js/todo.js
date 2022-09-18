@@ -9,7 +9,6 @@ function saveTodos(){
     localStorage.setItem(TODOS_KEY, JSON.stringify(todos));
 }
 
-
 // 삭제 
 function deleteTodo(e){
     const li = e.target.parentNode;
@@ -18,22 +17,21 @@ function deleteTodo(e){
     saveTodos();
 }
 
-
 function showTodo(newTodo){
     const li = document.createElement("li");
     li.id = newTodo.id;
     const span = document.createElement("span");
     span.innerText = newTodo.text;
-    const btn = document.createElement("button");
-    btn.innerText = "삭제";
-    btn.classList = "btn";
-    li.appendChild(span);
-    li.appendChild(btn);
+    const delBtn = document.createElement("button");
+    delBtn.innerText = "삭제";
+    delBtn.classList = "btn";
+
     todoList.appendChild(li);
-
-    btn.addEventListener("click", deleteTodo);
+    li.appendChild(span);
+    li.appendChild(delBtn);
+    
+    delBtn.addEventListener("click", deleteTodo);
 }
-
 
 function todoSubmit(e){
     e.preventDefault();

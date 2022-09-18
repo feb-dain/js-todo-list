@@ -12,7 +12,6 @@ function geoOn(position){
             const weatherKr = (data.weather[0].main) === "Clear" ? "오늘 날씨가 좋아요" : "오늘도 힘내세요";
             weather.innerText = `${weatherKr} / ${data.main.temp}도`;
         }); 
-        console.log(url);
     }
 function geoError(){
     modal.classList.remove("hidden")  
