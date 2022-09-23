@@ -5,7 +5,7 @@
 
 **#Light Mode**
 
-<img width="859" alt="image" src="https://user-images.githubusercontent.com/108778921/190899640-83dc5e76-a9a7-40d3-aa90-8790bf854554.png">
+![todolist](https://user-images.githubusercontent.com/108778921/192009015-2a5abcd5-34db-4d75-b3a6-adb3c89ebe44.png)
 
 <br>
 
