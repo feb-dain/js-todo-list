@@ -1,4 +1,4 @@
-let modal = document.querySelector(".modal")
+let modal = document.querySelector(".modal");
 
 const modalInner = document.createElement("div");
 modalInner.classList = "modal-inner";
@@ -14,7 +14,7 @@ modalInner.appendChild(modalBtn);
 modal.appendChild(modalInner);
 
 function clickedModal(){
-    modal.classList.add("hidden")
+    modal.classList.add("hidden");
 }
 
 modalBtn.addEventListener("click", clickedModal);
