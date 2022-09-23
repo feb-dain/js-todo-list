@@ -1,7 +1,7 @@
 @charset "utf-8";
 :root {
-    --light-bg-color: linear-gradient(180deg, #CEE8F2, #E2EFF5);
-    --light-btn-color: #ACD7F2; 
+    --light-bg-color: linear-gradient(180deg, #afdaec, #8eb1e7);
+    --light-btn-color: #5c9cd9; 
 
     --dark-bg-color: linear-gradient(180deg, #4b4b4b, #e1e1e1);
     --dark-btn-color: #333; 
@@ -35,11 +35,12 @@ body {
     /* 스크롤 숨기기 */
     -ms-overflow-style: none;
     scrollbar-width: none;
+    background: #f3f7f9;
 }
 
 #wrap {
     min-height: 100vh;
-    padding: 2rem;
+    padding: 2.4rem;
     background: var(--light-bg-color);
     font-size: 1.6rem;
     color: var(--color-white);
@@ -208,7 +209,7 @@ body::-webkit-scrollbar {
 /* 반응형 */
 @media screen and (min-width:30rem){
     #wrap {
-        width: 48rem;
+        width: 50rem;
         margin: auto;
     }
 }
