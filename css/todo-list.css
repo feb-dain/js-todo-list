@@ -2,7 +2,7 @@
 :root {
     --light-bg-color: linear-gradient(180deg, #afdaec, #8eb1e7);
     --light-btn-color: #5c9cd9; 
-    --light-lnb-color: #c8e7f5;
+    --light-lnb-color: #cde9f5;
 
     --dark-bg-color: linear-gradient(180deg, #4b4b4b, #e1e1e1);
     --dark-btn-color: #333; 
