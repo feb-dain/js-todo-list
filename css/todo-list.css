@@ -297,7 +297,7 @@ body::-webkit-scrollbar {
     border: 0.05rem solid var(--color-white);
     font-size: 1.4rem;
     padding: 1rem 4rem;
-    margin-top: 4rem;
+    margin-top: 3.6rem;
     cursor: pointer;
 }
 #logout:hover {
