@@ -28,7 +28,7 @@ function toggleLightMode() {
     opToggle.style.border = "0.14rem solid #fff";
     root.style.setProperty("--light-bg-color", "linear-gradient(180deg,  #afdaec, #8eb1e7)");
     root.style.setProperty("--light-btn-color", "#5c9cd9");
-    root.style.setProperty("--light-lnb-color", "#cdeaf7");
+    root.style.setProperty("--light-lnb-color", "#cde9f5");
     root.style.setProperty("--dark-bg-color", "linear-gradient(180deg, #000, #111)");
     root.style.setProperty("--dark-btn-color", "#222");
     body.style.backgroundColor = "#f3f7f9";
