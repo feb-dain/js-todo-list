@@ -1,5 +1,3 @@
-
-
 function geoOn(position){
     const lat = position.coords.latitude;
     const lon = position.coords.longitude;
@@ -14,7 +12,9 @@ function geoOn(position){
         }); 
     }
 function geoError(){
-    modal.classList.remove("hidden")  
+    modalM1.classList.remove("hidden");
+    modalM2.classList.add("hidden");
+    modal.classList.remove("hidden");
     weather.innerText = "오늘도 힘내세요!";
 }
 

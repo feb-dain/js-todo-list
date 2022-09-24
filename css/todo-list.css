@@ -2,6 +2,7 @@
 :root {
     --light-bg-color: linear-gradient(180deg, #afdaec, #8eb1e7);
     --light-btn-color: #5c9cd9; 
+    --light-lnb-color: #c8e7f5;
 
     --dark-bg-color: linear-gradient(180deg, #4b4b4b, #e1e1e1);
     --dark-btn-color: #333; 
@@ -40,10 +41,13 @@ body {
 
 #wrap {
     min-height: 100vh;
-    padding: 2.4rem;
     background: var(--light-bg-color);
     font-size: 1.6rem;
     color: var(--color-white);
+
+    position: relative;
+    overflow: hidden;
+    padding: 1.4rem;
 }
 
 /* 헤더 */
@@ -60,12 +64,12 @@ body {
     display: flex;
 }
 .mode-toggle {
+    position: relative;
     width: 4.8rem;
     padding: 0 0.2rem;
     border: 0.14rem solid #fff;
     border-radius: 1.12rem;
     margin-left: 1rem;
-    position: relative;
     z-index: 2;
 }
 .mode-toggle-inner {
@@ -73,8 +77,8 @@ body {
     justify-content: space-between;
 }
 .mode-btn {
-    width: 2rem;
-    height: 2rem;
+    width: 2.04rem;
+    height: 2.04rem;
     background: #fff;
     position: absolute;
     top: 0;
@@ -89,6 +93,7 @@ body {
     text-align: center;
     color: #fff291;
     z-index: 1;
+    cursor: pointer;
 }
 
 /* 버튼 */
@@ -98,6 +103,7 @@ body {
     background: var(--light-btn-color);
     font-size: 1.2rem;
     color: var(--color-white);
+    cursor: pointer;
 }
 
 /* 로그인 화면 */
@@ -193,7 +199,16 @@ body {
     padding: 0.6rem 0;
     color: var(--color-white);
     background: var(--light-btn-color);
+    cursor: pointer;
 }
+.cancel-modal-btn button {
+    display: inline-block;
+    width: 44%;
+}
+.cancel-modal-btn button:nth-child(2) {
+    margin-right: 4%;
+}
+
 /* 할 일 완료 */
 #todo-list li span.finished {
     text-decoration: line-through;
@@ -206,10 +221,141 @@ body::-webkit-scrollbar {
     overflow-y: scroll;
 }
 
+/* 업데이트 (버전2) */
+#left-top {
+    display: flex;
+}
+#left-top>#ham {
+    margin-top: 0.06rem;
+}
+.bi-list {
+    position: absolute;
+    font-size: 2rem;
+    margin: -0.1rem 0.8rem 0 0;
+    cursor: pointer;
+}
+#ham #profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    border-radius: 0;
+    background-color: var(--light-lnb-color);
+    position: absolute;
+    top: 0;
+    left: -99rem;
+    z-index: 2;
+    transition: all .3s linear;
+}
+#ham #profile.active {
+    left: 0;
+}
+#ham #profile .close-btn {
+    font-size: 2.8rem;
+    padding: 1.2rem;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+#ham label {
+    color: var(--color-black);
+}
+#ham label>i {
+    cursor: pointer;
+    font-size: 1.6rem;
+    padding: 0.6rem 0.8rem;
+    margin-left: 1.8rem;
+    border-radius: 5rem;
+    background: var(--color-white);
+    position: absolute;
+    top: 14.8rem;
+    z-index: 1;
+}
+#ham label>input {
+    display: none;
+}
+
+#preview {
+    background: var(--color-white);
+    border: 0.4rem solid var(--color-white);
+    border-radius: 5rem;
+    margin: 2.8rem 0 2.4rem;
+}
+#user-name {
+    font-size: 1.4rem;
+    color: var(--color-black);
+    background: var(--color-white);
+    width: 9.2rem;
+    padding: 0.4rem 0;
+    text-align: center;
+}
+#logout {
+    background: var(--light-btn-color);
+    border: 0.05rem solid var(--color-white);
+    font-size: 1.4rem;
+    padding: 1rem 4rem;
+    margin-top: 4rem;
+    cursor: pointer;
+}
+#logout:hover {
+    opacity: 0.85;
+}
+#del-todos {
+    font-size: 1.6rem;
+    margin-left: 0.8rem;
+    cursor: pointer;
+}
+.modal-inner button:nth-child(3){
+    margin-right: 1rem;
+}
+#weather {
+    margin-left: 2.4rem;
+}
+
+
 /* 반응형 */
-@media screen and (min-width:30rem){
+@media screen and (min-width: 30rem){
     #wrap {
-        width: 50rem;
+        width: 48rem;
         margin: auto;
+        padding: 2.4rem;
+    }
+    .bi-list {
+        font-size: 3.2rem;
+        margin: -0.7rem 0.8rem 0 0;
+    }
+    #user-name {
+        width: 10rem;
+    }
+    #logout {
+        font-size: 1.6rem;
+        padding: 1rem 4.4rem;
+    }
+    #del-todos {
+        font-size: 1.7rem;
+        vertical-align: top;
+    }
+    #weather {
+        margin-left: 4.4rem;
+    }
+}
+
+@media screen and (min-width: 90rem){
+    #wrap {
+        width: 68rem;
+        padding: 4rem;
+    }
+    #header {
+        font-size: 1.4rem;
+    }
+    .btn {
+        font-size: 1.4rem;
+    }
+    #weather {
+        margin-left: 4.4rem;
+    }
+    #quote p {
+        font-size: 1.4rem;
     }
 }

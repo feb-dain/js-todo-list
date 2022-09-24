@@ -1,5 +1,6 @@
 const todoInput = todoForm.querySelector("input");
 const todoList = document.getElementById("todo-list");
+const delTodos = document.getElementById("del-todos");
 
 const TODOS_KEY = "todos";
 
@@ -15,6 +16,18 @@ function deleteTodo(e){
     li.remove();    
     todos = todos.filter((todo) => todo.id !== parseInt(li.id));
     saveTodos();
+}
+// 모두 삭제
+function delAllTodos(){
+    modalAllTodos.classList.remove("hidden");
+}
+function modalY2(){
+    modalAllTodos.classList.add("hidden")
+    localStorage.removeItem(TODOS_KEY);
+    location.reload();
+}
+function modalN2(){
+    modalAllTodos.classList.add("hidden")
 }
 
 function showTodo(newTodo){
@@ -56,3 +69,8 @@ if(savedTodos !== null){
     todos = parsedTodos;
     parsedTodos.forEach(showTodo);
 }
+
+delTodos.addEventListener("click", delAllTodos);
+
+btnDelAllTodosY.addEventListener("click", modalY2);
+btnDelAllTodosN.addEventListener("click", modalN2);

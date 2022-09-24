@@ -6,7 +6,7 @@ const bg = document.createElement("img");
 
 bg.src = `img/${todayImg}`;
 
-document.body.appendChild(bg); //append : 뒤에 기입, prepend : 앞에 기입
+document.body.appendChild(bg);
 
 console.log(bg);
 
