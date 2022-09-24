@@ -37,6 +37,8 @@ body {
     -ms-overflow-style: none;
     scrollbar-width: none;
     background: #f3f7f9;
+    
+    transition: all .3s linear;
 }
 
 #wrap {
