@@ -28,7 +28,7 @@
 <body>
     <div id="wrap">
         <header id="header">
-            <div id="left-top">
+            <div id="header-left">
                 <div id="ham">
                     <i class="bi bi-list"></i>
                     <div id="profile">
@@ -50,12 +50,8 @@
                 <p id="clock"></p>
                 <div class="mode-toggle">
                     <div class="mode-toggle-inner">
-                        <div id="sunIcon" class="toggle-box">
-                            <i class="bi bi-sun-fill"></i>
-                        </div>
-                        <div id="moonIcon" class="toggle-box">
-                            <i class="fas fa-moon"></i>
-                        </div>
+                        <i class="bi bi-sun-fill toggle-box" id="sunIcon"></i>
+                        <i class="bi bi-moon-fill toggle-box" id="moonIcon"></i>
                     </div>
                 </div>
             </div>
@@ -73,12 +69,12 @@
         <form id="todo-form" class="hidden">
             <input type="text" placeholder="오늘은 무엇을 할까?" required />
         </form>
-        <p id="list" class="hidden">| 목록 <i class="bi bi-trash-fill" id="del-todos"></i></p>
+        <h2 id="list" class="hidden"><i class="fa-solid fa-minus fa-rotate-90"></i> 목록 <i class="bi bi-trash-fill" id="del-todos"></i></h2>
         <ul id="todo-list"></ul>
-        <div id="quote">
+        <footer id="quote">
             <p></p>
             <p></p>
-        </div>
+        </footer>
 
         <div class="modal hidden"></div>
         <div class="cancel-modal cancel-modal-btn modal hidden"></div>
