@@ -90,12 +90,13 @@ body {
 }
 .toggle-box {
     width: 1.6rem;
-    height: 2rem;
-    line-height: 1.9rem;
     text-align: center;
     color: #fff291;
     z-index: 1;
     cursor: pointer;
+}
+.toggle-box:nth-child(2){
+    font-size: 1.2rem;
 }
 
 /* 버튼 */
@@ -134,6 +135,8 @@ body {
     padding: 1.2rem;
 }
 #list {
+    font-size: 2.2rem;
+    font-weight: normal;
     margin-bottom: 1.6rem;
 }
 
@@ -224,10 +227,10 @@ body::-webkit-scrollbar {
 }
 
 /* 업데이트 (버전2) */
-#left-top {
+#header-left {
     display: flex;
 }
-#left-top>#ham {
+#header-left>#ham {
     margin-top: 0.06rem;
 }
 .bi-list {
@@ -304,7 +307,7 @@ body::-webkit-scrollbar {
     opacity: 0.85;
 }
 #del-todos {
-    font-size: 1.6rem;
+    font-size: 2rem;
     margin-left: 0.8rem;
     cursor: pointer;
 }
@@ -333,10 +336,6 @@ body::-webkit-scrollbar {
     #logout {
         font-size: 1.6rem;
         padding: 1rem 4.4rem;
-    }
-    #del-todos {
-        font-size: 1.7rem;
-        vertical-align: top;
     }
     #weather {
         margin-left: 4.4rem;
