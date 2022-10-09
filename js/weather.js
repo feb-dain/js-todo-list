@@ -1,8 +1,8 @@
 function geoOn(position){
     const lat = position.coords.latitude;
     const lon = position.coords.longitude;
-    const API = "efc645bd848daf6b8bd453a45964ecfe";
-    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API}&units=metric`
+    const API_KEY = config.apikey;
+    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`
     fetch(url)
         .then((response) => response.json())
         .then((data) => {
