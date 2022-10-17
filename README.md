@@ -6,12 +6,12 @@
 ## ver 2. (Updated on 24th Sep.)
 **#Light Mode**
 
-![image](https://user-images.githubusercontent.com/108778921/192101346-28ebfc8c-b2c6-4243-acb8-b3f3dd38cf43.png)
+![lightmode](https://user-images.githubusercontent.com/108778921/196132799-f3d0a1fd-7e44-437f-b09f-94a1551054d2.jpg)
 
 
 **#Dark Mode**
 
-![image](https://user-images.githubusercontent.com/108778921/192101351-fd4f0e07-a4b9-4ac6-a467-c2ddfb630507.png)
+![darkmode](https://user-images.githubusercontent.com/108778921/196131955-97d235cb-fead-42b3-81b7-d974a6741053.jpg)
 
 
 <br>
